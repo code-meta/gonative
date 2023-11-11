@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./css/output.css" rel="stylesheet" />
+    <link href="../css/output.css" rel="stylesheet" />
     <script
       defer
       src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
@@ -11,30 +11,21 @@
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <title>Gonative</title>
   </head>
-  <body class="min-h-screen">
+  <body>
     <!-- navbar -->
     <nav class="border-b">
       <div class="container mx-auto p-4">
-        <h1 class="font-medium text-xl">Gonative</h1>
+        <h1 class="font-medium text-xl"><a href="/">Gonative</a></h1>
       </div>
     </nav>
 
     <main class="mt-6">
       <section class="container mx-auto p-4">
-        <div class="bg-gray-100 p-3 mt-6 rounded border-l-4 border-blue-500">
-          <a href="./pages/words.html">
-            <h5>Top useful words</h5>
-          </a>
-        </div>
-
-        <div class="bg-gray-100 p-3 mt-6 rounded border-l-4 border-blue-500">
-          <a href="./pages/contracted-words.html">
-            <h5>Useful contracted words</h5>
-          </a>
+        <div>
+          <p class="text-2xl text-center mt-6">This Page still under development</p>
         </div>
       </section>
     </main>
-
 
     <footer x-data class="text-center absolute left-0 right-0 bottom-0 p-4">
       <p>&copy; Gonative <span x-text="new Date().getFullYear()"></span></p>
