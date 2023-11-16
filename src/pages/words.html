@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="../css/output.css" rel="stylesheet" />
+    <link href="../css/app.css" rel="stylesheet" />
     <script
       defer
       src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
@@ -28,7 +29,7 @@
           </p>
         </div>
 
-        <div x-data="{words: []}" x-init="words = allWords()">
+        <div x-data="wordlist">
           <template x-for="item in words">
             <div>
               <div class="bg-gray-100 p-3 mt-6">
@@ -69,6 +70,10 @@
               </div>
             </div>
           </template>
+          <div x-cloak x-show="loading">
+            <p class="text-center">Loading...</p>
+          </div>
+          <div id="loader"></div>
         </div>
       </section>
     </main>
